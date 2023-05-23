@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>My personal website</title>
 </head>
 <body>
     
         
     <header class="header">
-        <a href="home.html">Home</a>
+        <a href="index.html">Home</a>
         <a href="about.html">About Me</a>
-        <a href="blogs .html">Blogs & contacts</a>
+        <a href="#" onclick="showProfileCard()">Blogs & contacts</a>
     </header>
     <hr>
             
@@ -28,29 +29,62 @@
         <div class="heading"><h2 style="color: #BAA7B0;">What I am proficient in:</h2></div>
         <div class="proficient">
            
-            <div class="img">
+            <div class="img" style="background-color: azure;">
                 <img src="git.png" width="50px" height="50px">
-                <p>Git</p>
+                <p style="background-color: azure;">Git</p>
             </div>
-            <div class="img">
+            <div class="img" style="background-color: azure;">
                 <img src="html.png" width="50px" height="50px">
-                <p>HTML</p>
+                <p style="background-color: azure;">HTML</p>
             </div>
-            <div class="img">
+            <div class="img" style="background-color: azure;">
                 <img src="css-3.png" width="50px" height="50px">
-                <p>CSS</p>
+                <p style="background-color: azure;">CSS</p>
             </div>
-            <div class="img">
+            <div class="img" style="background-color: azure;">
                 <img src="java-script.png" width="50px" height="50px">
-                <p>JAVASCRIPT</p>
+                <p style="background-color: azure;">JAVASCRIPT</p>
             </div>
             
         </div>
+
+    <div id="overlay">
+
+        <div id="profileCard">
+            <div class="image">
+                <img src="me.jpg" alt="" class="profile-image">
+            </div>
+            <div class="text-data">
+                <span class="name">Josphine Wagatwe</span>
+                <span class="job">Software developer</span>
+            </div>
+            <div class="media-buttons">
+                <a href="https://github.com/wagatzzz"style="background: grey" class="links">
+                    <i class='bx bxl-github' style="background: grey ; color: white" ></i>
+                </a>
+                <a href="https://twitter.com/wagatzzz?t=Q8H4Nri2EoPOdjvX1uphsA&s=09"style="background: #1da1f2" class="links">
+                    <i class='bx bxl-twitter' style="background: #1da1f2 ; color: white" ></i>
+                </a>
+                <a href="https://instagram.com/wagatz.z.z?igshid=MzNlNGNkZWQ4Mg=="style="background: #e1306c" class="links">
+                    <i class='bx bxl-instagram' style="background: #e1306c ; color: white" ></i>
+                </a>
+                <a href="#"style="background: #5C80BC" class="links">
+                    <i class='bx bxl-linkedin' style="background: #5C80BC ; color: white" ></i>
+                </a>
+                
+            </div>
+            <div class="blog">
+                <a href="#">Blogs</a>
+            </div>
+            
+        </div>
+    </div>
+
         <hr>
         <footer class="footer">
-            <a href="home.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="about.html">About Me</a>
-            <a href="blogs.html">Blogs & contacts</a>
+            <a href="#" onclick="showProfileCard()">Blogs & contacts</a>
           </footer>
           
     </div>
