@@ -1,17 +1,17 @@
-function showProfileCard() {
-    var overlay = document.getElementById("overlay");
-    var profileCard = document.getElementById("profileCard");
+// Initialize GSAP
+gsap.registerPlugin(ScrollTrigger);
 
-    overlay.style.display = "block";
-    profileCard.style.display = "block";
-}
+// Define the animation
+const text = document.querySelector(".text");
 
-window.addEventListener("click", function (event) {
-    var overlay = document.getElementById("overlay");
-    var profileCard = document.getElementById("profileCard");
-
-    if (event.target === overlay) {
-        overlay.style.display = "none";
-        profileCard.style.display = "none";
+gsap.to(text, {
+    opacity: 1,
+    duration: 1, // Adjust the duration as needed
+    scrollTrigger: {
+        trigger: text,
+        start: "-550  centre", // Scroll trigger point set to three times the viewport height
+        end: "center center",
+        scrub: true,
+        toggleActions: "play reverse play reverse",
     }
 });
